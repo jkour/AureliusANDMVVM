@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{C55AEE7A-FC9E-4BCA-BDEB-CB1742261E0C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="AureliusAndMVVM.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="AureliusAndMVVM">
+        <MSBuild Projects="AureliusAndMVVM.dproj"/>
+    </Target>
+    <Target Name="AureliusAndMVVM:Clean">
+        <MSBuild Projects="AureliusAndMVVM.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AureliusAndMVVM:Make">
+        <MSBuild Projects="AureliusAndMVVM.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="AureliusAndMVVM"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="AureliusAndMVVM:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="AureliusAndMVVM:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
