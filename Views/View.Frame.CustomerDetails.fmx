@@ -1,0 +1,70 @@
+object FrameCustomerDetails: TFrameCustomerDetails
+  Size.Width = 433.000000000000000000
+  Size.Height = 329.000000000000000000
+  Size.PlatformDefault = False
+  object ImagePhoto: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 16.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 129.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object EditLastName: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 168.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 257.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object LabelLastName: TLabel
+    Position.X = 168.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 257.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'LabelLastName'
+  end
+  object EditFirstName: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 168.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 257.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object LabelFirstName: TLabel
+    Position.X = 168.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 257.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'LabelFirsName'
+  end
+  object ButtonLoadImage: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Load Image'
+  end
+  object ButtonCancel: TButton
+    Position.X = 344.000000000000000000
+    Position.Y = 176.000000000000000000
+    TabOrder = 7
+    Text = 'Cancel'
+  end
+  object ButtonSave: TButton
+    Position.X = 248.000000000000000000
+    Position.Y = 176.000000000000000000
+    TabOrder = 6
+    Text = 'Save'
+  end
+end
