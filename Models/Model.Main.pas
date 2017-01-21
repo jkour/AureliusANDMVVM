@@ -79,6 +79,7 @@ end;
 
 procedure TModelMain.getCustomerList(var aList: TObjectList<TCustomers>);
 begin
+  fObjectManager.Clear;
   aList:=fObjectManager.Find<TCustomers>.OrderBy('LastName').List;
 end;
 
